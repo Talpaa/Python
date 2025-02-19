@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form di registrazione</title>
+        <style>
+            body {
+                margin-left: 30%;
+                margin-right: 30%;
+                font-family: Arial;
+                font-size: 30px;
+                text-align: center;
+                background: #a9d6bf; 
+            }
+            p {
+                text-align: left;
+                color: red;
+            } 
+            #btnid {
+                text-align: center;		
+            }
+            
+            input[type = submit], input[type = reset] {
+                background-color: orange; 
+                font-size: 22px;	
+             }		
+        </style>	
+
+    </head>
+    <body>
+        <h1>Form di registrazione</h1>
+        <form action="/registrati" method="get">
+            <fieldset>
+                    
+                <legend>Dati Utente</legend>
+                <input type="hidden" name="controllo" value="2"><br>
+
+                <p >
+                    <label for="fname">nome utente:</label><br>
+                    <input type="text" name="fname" size="50">
+                </p>
+
+                <p>
+                    <label for="fpassword">Password:</label><br>
+                    <!--(?=.*[!@#$%^&*_=+-])-->
+                    <!--(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}-->
+                    <input type="password" name="fpassword" size="50" minlength="8" maxlength="16" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}" 
+                           title="Deve contenere almeno una lettera maiuscola, una minuscola, un numero[0-9], un carattere speciale[@$!%*?&]">
+                </p>
+
+            </fieldset>
+
+            <p>
+                <label for="fsesso">Sesso:</label> 
+                <input type = "radio" name="fsesso" value = "0"checked > ND
+                <input type="radio" name="fsesso" value="1">M
+                <input type="radio" name="fsesso" value="2">F
+            </p>
+
+            <p>
+                <label for="fComune">Comune di nascita</label><br>
+                <select name="fComune">
+                    <option value="Milano">MI</option>
+                    <option value="Bari">BA</option>
+                    <option value="Torino" >TO</option>
+                    <option value="Roma"selected>RM</option>
+                    <option value="Pescara">PE</option>
+                    <option value="Ascoli Piceno">AP</option>
+                </select>
+            </p>
+            <input type="submit" value="invia dati">
+            <h1>Sei gia registrato? <a href="/login">Login</h1></a>
+        </form>
+    </body>
+</html>

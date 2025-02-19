@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Creazione cittadino</title>
+        <style></style>
+    </head>
+
+    <body>
+        <h1>Form di Creazione</h1>
+        <form action="/aggiungi" method="get">
+            <fieldset>
+                    
+                <legend>Dati Utente</legend>
+                <input type="hidden" name="controllo" value="2"><br>
+
+                <p >
+                    <label for="fcf">Inserire il codice fiscale del cittadino:</label><br>
+                    <input type="text" name="fcf" max="16" min="16" size="50" title="Deve essere lungo 16 caratteri">
+                </p>
+                <p >
+                    <label for="fname">Inserire il nome del cittadino:</label><br>
+                    <input type="text" name="fname" size="50">
+                </p>
+                <p >
+                    <label for="fsurname">Inserire il cognome del cittadino:</label><br>
+                    <input type="text" name="fsurname" size="50">
+                </p>
+                <p >
+                    <label for="fdate">Inserire la data di nascita del cittadino:</label><br>
+                    <input type="date" name="fdate" min="1908-05-23" max="2025-01-10" size="50">
+                </p>
+                
+
+            </fieldset>
+
+            <input align="center" type="submit" value="invia dati">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Visualizza cittadino</title>
+        <style></style>
+    </head>
+
+    <body>
+        <h1>Form di Visualizzazione</h1>
+        <form action="/visualizza" method="get">
+            <fieldset>
+                    
+                <legend>Dati Utente</legend>
+                <input type="hidden" name="controllo" value="2"><br>
+
+                <p >
+                    <label for="fcf">Inserire il codice fiscale del cittadino:</label><br>
+                    <input type="text" name="fcf" max="16" min="16" size="50" title="Deve essere lungo 16 caratteri">
+                </p>
+
+            </fieldset>
+
+            <input type="submit" value="invia dati">
+        </form>
+    </body>
+</html>

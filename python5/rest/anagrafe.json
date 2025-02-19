@@ -1,0 +1,26 @@
+{
+    "mrdmrt01h30h501u": {
+        "nome": "mario",
+        "cognome": "de martino",
+        "dataNascita": "30/01/1980",
+        "codiceFiscale": "mrdmrt01h30h501u"
+    },
+    "lgdcrl09h17h501u": {
+        "nome": "luigi",
+        "cognome": "de carli",
+        "dataNascita": "17/09/1980",
+        "codiceFiscale": "lgdcrl09h17h501u"
+    },
+    "frnttt05h03h501u": {
+        "nome": "francesca",
+        "cognome": "totta",
+        "dataNascita": "03/05/1980",
+        "codiceFiscale": "frnttt05h03h501u"
+    },
+    "crlpgg03h21h501u": {
+        "nome": "carlo",
+        "cognome": "piaggi",
+        "dataNascita": "21/03/1980",
+        "codiceFiscale": "crlpgg03h21h501u"
+    }
+}
