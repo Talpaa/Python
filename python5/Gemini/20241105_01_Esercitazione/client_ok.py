@@ -4,7 +4,7 @@ sModel = "gemini-1.5-pro-exp-0827"
 
 
 base_url = "https://generativelanguage.googleapis.com/v1beta/models/" + sModel + ":generateContent?key="
-sGoogleApiKey = "AIzaSyBvE9_fKVEYfwVbIB6F2RGktcNt4P-ENrE"
+sGoogleApiKey = ""
 api_url = base_url + sGoogleApiKey
 
 sUsername=""
